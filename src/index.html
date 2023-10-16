@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livestream</title>
+    <style>
+      * {
+        background-color: #1f1f1f;
+      }
+      .container {
+        margin: 40px auto;
+        padding: 0;
+        box-sizing: border-box;
+        max-width: 1650px;
+        line-height: 1.6;
+        background-color: #1f1f1f;
+      }
+      .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      li {
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        color: black;
+      }
+      #videoPlayer {
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body>
+  <header class="head">
+    <h4>stream server</h4>
+    <ul><li><a href="/download" class="href">download</a></li></ul>
+  </header>
+  <div class="container">
+    <video id="videoPlayer" width="1650" controls muted="muted" autoplay>
+      <source src="/watch-video"  type="video/mp4" />
+    </video>
+  </div>   
+</body>
+</html>

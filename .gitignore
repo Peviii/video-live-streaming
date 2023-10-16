@@ -1,0 +1,4 @@
+/node_modules
+/src/database/database.js
+/src/interestelar.mp4
+.env
